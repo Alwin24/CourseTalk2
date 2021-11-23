@@ -6,4 +6,7 @@
     <string name="eco_criticism">Eco criticism</string>
     <string name="creative_writing">Creative writing</string>
     <string name="course_list">Course List</string>
+    <string name="write_your_own_review">Write Your Own Review</string>
+    <string name="profile">Profile</string>
+    <string name="sign_out">Sign out</string>
 </resources>

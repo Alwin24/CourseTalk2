@@ -162,4 +162,8 @@ public class Course2Activity extends AppCompatActivity {   // change here
 
         listOfMessages.setAdapter(adapter);
     }
+
+    public void goToProfile(MenuItem item) {
+        startActivity(new Intent(Course2Activity.this, CourseList.class)); //change this
+    }
 }

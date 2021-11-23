@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -161,5 +162,9 @@ public class Course1Activity extends AppCompatActivity {
         };
 
         listOfMessages.setAdapter(adapter);
+    }
+
+    public void goToProfile(MenuItem item) {
+        startActivity(new Intent(Course1Activity.this, CourseList.class)); //change this
     }
 }
