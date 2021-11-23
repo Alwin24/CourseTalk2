@@ -164,6 +164,6 @@ public class Course2Activity extends AppCompatActivity {   // change here
     }
 
     public void goToProfile(MenuItem item) {
-        startActivity(new Intent(Course2Activity.this, CourseList.class)); //change this
+        startActivity(new Intent(Course2Activity.this, Profile.class)); //change this
     }
 }

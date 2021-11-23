@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChatApp4">
         <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
             android:name=".Course2Activity"
             android:exported="true" />
         <activity
@@ -23,7 +26,7 @@
         </activity>
         <activity
             android:name=".Course1Activity"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
 
 </manifest>
