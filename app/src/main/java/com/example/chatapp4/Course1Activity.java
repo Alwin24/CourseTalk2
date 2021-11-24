@@ -31,6 +31,7 @@ public class Course1Activity extends AppCompatActivity {
     private static final int RC_SIGN_IN = 1;
     private FirebaseAnalytics mFirebaseAnalytics;
     private FirebaseListAdapter<ChatMessage> adapter;
+    private static final int x = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
