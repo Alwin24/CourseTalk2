@@ -12,7 +12,7 @@
         android:id="@+id/CourseName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eco criticism"
+        android:text="@string/eco_criticism"
         android:layout_centerHorizontal="true"
         android:textSize="48dp"
         app:layout_constraintBottom_toBottomOf="parent"

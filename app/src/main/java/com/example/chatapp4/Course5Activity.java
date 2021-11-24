@@ -37,7 +37,7 @@ public class Course5Activity extends AppCompatActivity {   // change here
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_course2); // change here
+        setContentView(R.layout.activity_course5); // change here
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
