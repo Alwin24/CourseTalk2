@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChatApp4">
         <activity
+            android:name=".Course5Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Course4Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Course3Activity"
+            android:exported="true" />
+        <activity
             android:name=".Profile"
             android:exported="true" />
         <activity

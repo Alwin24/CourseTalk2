@@ -77,5 +77,38 @@ public class CourseList extends AppCompatActivity {
             }
 
         });
+        button3.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+
+                Intent Course3Activity = new Intent(CourseList.this, Course3Activity.class);
+                Course3Activity.putExtra("course","Modern fiction");
+                startActivity(Course3Activity);
+            }
+
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+
+                Intent Course4Activity = new Intent(CourseList.this, Course4Activity.class);
+                Course4Activity.putExtra("course","Eco criticism");
+                startActivity(Course4Activity);
+            }
+
+        });
+        button5.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+
+                Intent Course5Activity = new Intent(CourseList.this, Course5Activity.class);
+                Course5Activity.putExtra("course","Creative writing");
+                startActivity(Course5Activity);
+            }
+
+        });
     }
 }
