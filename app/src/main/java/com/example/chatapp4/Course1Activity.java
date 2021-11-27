@@ -17,6 +17,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.chatapp4.webview.Web1Activity;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -50,6 +51,7 @@ public class Course1Activity extends AppCompatActivity {
 
         FloatingActionButton fab =
                 (FloatingActionButton) findViewById(R.id.fab);
+        Button handout = (Button) findViewById(R.id.Handout_btn);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +79,13 @@ public class Course1Activity extends AppCompatActivity {
                 }else{
                     input.setText("");
                 }
+            }
+        });
+        handout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Course1Activity.this, Web1Activity.class);
+                startActivity(i);
             }
         });
     }

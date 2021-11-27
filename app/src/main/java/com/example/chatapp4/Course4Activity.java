@@ -11,11 +11,14 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.chatapp4.webview.Web3Activity;
+import com.example.chatapp4.webview.Web4Activity;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -48,6 +51,7 @@ public class Course4Activity extends AppCompatActivity {   // change here
 
         FloatingActionButton fab =
                 (FloatingActionButton) findViewById(R.id.fab);
+        Button handout = (Button) findViewById(R.id.Handout_btn);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +79,14 @@ public class Course4Activity extends AppCompatActivity {   // change here
                 }else{
                     input.setText("");
                 }
+            }
+        });
+
+        handout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Course4Activity.this, Web4Activity.class);
+                startActivity(i);
             }
         });
     }
