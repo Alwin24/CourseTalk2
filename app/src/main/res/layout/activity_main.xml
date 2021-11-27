@@ -8,17 +8,18 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".Course1Activity">
 
-<TextView
-    android:id="@+id/CourseName"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Applied Philosophy"
-    android:layout_centerHorizontal="true"
-    android:textSize="48dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/CourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Critical analysis of literature and cinema"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="match_parent"

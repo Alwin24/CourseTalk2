@@ -61,7 +61,7 @@ public class CourseList extends AppCompatActivity {
                 System.out.println("Button Clicked");
 
                 Intent Course1Activity = new Intent(CourseList.this, Course1Activity.class);
-                Course1Activity.putExtra("course","Applied philosophy");
+                Course1Activity.putExtra("course","Critical analysis of literature and cinema");
                 startActivity(Course1Activity);
             }
 
@@ -72,7 +72,7 @@ public class CourseList extends AppCompatActivity {
                 System.out.println("Button Clicked");
 
                 Intent Course2Activity = new Intent(CourseList.this, Course2Activity.class);
-                Course2Activity.putExtra("course","Public policy");
+                Course2Activity.putExtra("course","Effective public speaking");
                 startActivity(Course2Activity);
             }
 
@@ -83,7 +83,7 @@ public class CourseList extends AppCompatActivity {
                 System.out.println("Button Clicked");
 
                 Intent Course3Activity = new Intent(CourseList.this, Course3Activity.class);
-                Course3Activity.putExtra("course","Modern fiction");
+                Course3Activity.putExtra("course","Dynamics of social change");
                 startActivity(Course3Activity);
             }
 
@@ -105,7 +105,7 @@ public class CourseList extends AppCompatActivity {
                 System.out.println("Button Clicked");
 
                 Intent Course5Activity = new Intent(CourseList.this, Course5Activity.class);
-                Course5Activity.putExtra("course","Creative writing");
+                Course5Activity.putExtra("course","Modern political concepts");
                 startActivity(Course5Activity);
             }
 
