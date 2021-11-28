@@ -1,77 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CourseList">
+    tools:context=".CourseList"
+    android:padding="12dp">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:text="@string/critical_analysis_of_literature_and_cinema"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="@string/critical_analysis_of_literature_and_cinema"
+                android:layout_below="@+id/textView3"
+                android:fontFamily="@font/comforta_bold"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:text="@string/effective_public_speaking"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="@string/effective_public_speaking"
+                android:layout_below="@+id/button1"
+                android:fontFamily="@font/comforta_bold"/>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:text="@string/dynamics_of_social_change"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="@string/dynamics_of_social_change"
+                android:layout_below="@id/button2"
+                android:fontFamily="@font/comforta_bold"/>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:text="@string/eco_criticism"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="@string/eco_criticism"
+                android:layout_below="@+id/button3"
+                android:fontFamily="@font/comforta_bold"/>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:text="@string/modern_political_concepts"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="@string/modern_political_concepts"
+                android:layout_below="@+id/button4"
+                android:fontFamily="@font/comforta_bold"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="234dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:gravity="center_horizontal"
+        android:gravity="left"
         android:text="@string/course_list"
+        android:fontFamily="@font/comforta_bold"
         android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Made with ♥️by OOP Group7 Sub2"
+        android:textAlignment="center"/>
+</RelativeLayout>
