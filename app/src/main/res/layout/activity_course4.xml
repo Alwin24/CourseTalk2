@@ -39,8 +39,9 @@
             <ImageView
                 android:id="@+id/CourseImage"
                 android:src="@drawable/eco"
+                android:scaleType="centerCrop"
                 android:layout_width="match_parent"
-                android:layout_height="150dp" />
+                android:layout_height="240dp" />
 
             <TextView
                 android:id="@+id/descriptionTitle"
