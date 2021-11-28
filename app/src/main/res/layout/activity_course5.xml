@@ -39,10 +39,10 @@
 
             <ImageView
                 android:id="@+id/CourseImage"
+                android:src="@drawable/mpc"
+                android:scaleType="centerCrop"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_gravity="center"
-                android:src="@drawable/mpc" />
+                android:layout_height="240dp" />
 
             <TextView
                 android:id="@+id/descriptionTitle"
