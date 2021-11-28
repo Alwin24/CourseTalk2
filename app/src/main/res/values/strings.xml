@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CourseTalk</string>
+    <string name="course_list">Course List</string>
+    <string name="write_your_own_review">Write Your Own Review</string>
+    <string name="profile">Profile</string>
+    <string name="sign_out">Sign out</string>
+    <string name="textview">TextView</string>
+    <string name="effective_public_speaking">Effective public speaking</string>
+    <string name="critical_analysis_of_literature_and_cinema">Critical analysis of literature and cinema</string>
+    <string name="dynamics_of_social_change">Dynamics of social change</string>
+    <string name="eco_criticism">Eco criticism</string>
+    <string name="modern_political_concepts">Modern political concepts</string>
+</resources>
