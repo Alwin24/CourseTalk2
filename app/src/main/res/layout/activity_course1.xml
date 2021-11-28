@@ -2,19 +2,20 @@
 
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Course4Activity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Course1Activity">
 
     <TextView
         android:id="@+id/CourseName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:text="@string/eco_criticism"
+        android:padding="12dp"
+        android:fontFamily="@font/comforta_bold"
+        android:text="Critical Analysis of Literature and Cinema"
         android:textSize="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -36,15 +37,17 @@
             android:orientation="vertical"
             android:overScrollMode="always">
 
+
             <ImageView
                 android:id="@+id/CourseImage"
-                android:src="@drawable/eco"
+                android:src="@drawable/calci"
                 android:scaleType="centerCrop"
                 android:layout_width="match_parent"
                 android:layout_height="240dp" />
 
             <TextView
                 android:id="@+id/descriptionTitle"
+                android:fontFamily="@font/comforta_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/CourseImage"
@@ -73,11 +76,13 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/Handout_btn"
                 android:layout_marginTop="12dp"
+                android:fontFamily="@font/comforta_bold"
                 android:text="Average Grade: B-"
                 android:textSize="24dp" />
 
             <TextView
                 android:id="@+id/reviewTitle"
+                android:fontFamily="@font/comforta_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/averageGrade"
@@ -104,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:src="@drawable/fui_ic_check_circle_black_128dp"
+        android:src="@drawable/sendbutton"
         android:id="@+id/fab"
         android:tint="@android:color/white"
         android:layout_alignParentBottom="true"
@@ -119,12 +124,11 @@
         android:layout_alignParentStart="true">
 
         <EditText
-
             android:padding="12dp"
             android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Write Your Own Review"
+            android:hint="@string/write_your_own_review"
             android:id="@+id/input"
             />
     </com.google.android.material.textfield.TextInputLayout>
