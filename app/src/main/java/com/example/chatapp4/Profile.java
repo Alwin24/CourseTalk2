@@ -35,7 +35,10 @@ public class Profile extends AppCompatActivity {
         name.setText(user.getDisplayName());
         email.setText(user.getEmail());
 
+        Picasso.get().load("https://res.cloudinary.com/alwin24/image/upload/v1638023355/avatars/user_z0lszf.jpg").into(profilePic);
+        if(user.getPhotoUrl()!=null){
         Picasso.get().load(user.getPhotoUrl()).into(profilePic);
+        }
 
         Button button1 = findViewById(R.id.profile_button);
 

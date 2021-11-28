@@ -36,8 +36,10 @@ tools:context=".Course1Activity">
             android:orientation="vertical"
             android:overScrollMode="always">
 
+
             <ImageView
                 android:id="@+id/CourseImage"
+                android:src="@drawable/calci"
                 android:layout_width="match_parent"
                 android:layout_height="150dp" />
 
