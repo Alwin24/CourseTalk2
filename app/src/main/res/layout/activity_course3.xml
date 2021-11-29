@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:gravity="center"
+        android:fontFamily="@font/comforta_bold"
         android:text="@string/dynamics_of_social_change"
         android:textSize="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,6 +47,7 @@
             <TextView
                 android:id="@+id/descriptionTitle"
                 android:layout_width="match_parent"
+                android:fontFamily="@font/comforta_bold"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/CourseImage"
                 android:text="Description:"
@@ -69,6 +71,7 @@
 
             <TextView
                 android:id="@+id/averageGrade"
+                android:fontFamily="@font/comforta_bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/Handout_btn"
@@ -78,6 +81,7 @@
 
             <TextView
                 android:id="@+id/reviewTitle"
+                android:fontFamily="@font/comforta_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/averageGrade"
