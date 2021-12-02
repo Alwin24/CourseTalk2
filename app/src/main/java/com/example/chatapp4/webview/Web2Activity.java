@@ -18,6 +18,6 @@ public class Web2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_web2);
         web = findViewById(R.id.webView);
         web.setWebViewClient(new WebViewClient());
-        web.loadUrl("https://drive.google.com/file/d/19q3wgJGnnM7i3EkI5b0uZ05_c2WA9V_h/view?usp=sharing");
+        web.loadUrl("https://docs.google.com/document/d/1R_nOjVUbtGUvL6qDptHGjLxAoXd6EME0/edit?usp=sharing&ouid=109122313432760751087&rtpof=true&sd=true");
     }
 }

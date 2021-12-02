@@ -60,7 +60,7 @@ tools:context=".Course1Activity">
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/descriptionTitle"
                 android:padding="5dp"
-                android:text="This is a sample text that is being used to display the course description. "
+                android:text="@string/calci_description"
                 android:textSize="18dp" />
 
             <Button

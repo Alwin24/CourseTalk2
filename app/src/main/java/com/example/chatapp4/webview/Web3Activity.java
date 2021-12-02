@@ -18,6 +18,6 @@ public class Web3Activity extends AppCompatActivity {
         setContentView(R.layout.activity_web3);
         web = findViewById(R.id.webView);
         web.setWebViewClient(new WebViewClient());
-        web.loadUrl("https://www.google.com/");
+        web.loadUrl("https://docs.google.com/document/d/1NPFVfjZSlLzKyqMxZrM4_GqNXadakBqs/edit?usp=sharing&ouid=109122313432760751087&rtpof=true&sd=true");
     }
 }
